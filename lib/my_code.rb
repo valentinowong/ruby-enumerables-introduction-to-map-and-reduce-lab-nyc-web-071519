@@ -49,9 +49,13 @@ end
 
 def reduce_to_all_true(source_array)
   num = 0
+  value = true
   source_array.length.times do
-    
+    source_array[num] ? value : return value = false
+    num += 1
+    end
   end
+  value
 end
 
 def reduce_to_any_true(source_array)
