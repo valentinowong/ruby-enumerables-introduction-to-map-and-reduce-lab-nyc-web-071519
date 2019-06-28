@@ -2,7 +2,11 @@ def map_to_negativize(source_array)
   num = 0
   array = []
   source_array.length.times do
-    array << source_array[num]*-1
+    if source_array[num] > 0
+      array << source_array[num]*-1
+    else
+      array << source_array[num]
+    end
   end
   array
 end
