@@ -61,7 +61,7 @@ end
 
 def reduce_to_any_true(source_array)
   num = 0
-  value = true
+  value = false
   source_array.length.times do
     if !!source_array[num]
       value = true
