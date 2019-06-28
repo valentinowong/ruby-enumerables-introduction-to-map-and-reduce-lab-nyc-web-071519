@@ -60,5 +60,13 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  
+  num = 0
+  value = true
+  source_array.length.times do
+    if !!source_array[num]
+      value = true
+    end
+    num += 1
+  end
+  value
 end
