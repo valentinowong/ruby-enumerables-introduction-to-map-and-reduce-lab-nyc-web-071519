@@ -39,7 +39,13 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array, starting_point)
-
+  num = 0
+  value = 0
+  source_array.length.times do
+    value = value + source_array[num]
+    num += 1
+  end
+  value
 end
 
 def reduce_to_all_true(source_array)
