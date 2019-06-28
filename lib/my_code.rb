@@ -9,7 +9,13 @@ def map_to_negativize(source_array)
 end
 
 def map_to_no_change(source_array)
-  
+  num = 0
+  array = []
+  source_array.length.times do
+    array << source_array[num]
+    num += 1
+  end
+  array
 end
 
 def map_to_double(source_array)
