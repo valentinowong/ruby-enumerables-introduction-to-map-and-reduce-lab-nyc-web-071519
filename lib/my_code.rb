@@ -2,9 +2,9 @@ def map_to_negativize(source_array)
   num = 0
   array = []
   source_array.length.times do
-    source_array[num] << array
+    array << source_array[num]*-1
   end
-  array = source_array
+  array
 end
 
 def map_to_no_change(source_array)
