@@ -53,7 +53,6 @@ def reduce_to_all_true(source_array)
   source_array.length.times do
     source_array[num] ? value : return value = false
     num += 1
-    end
   end
   value
 end
